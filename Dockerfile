@@ -1,3 +1,3 @@
 FROM netboxcommunity/netbox:latest
-RUN /usr/local/bin/uv pip install  --no-warn-script-location \
-    netbox_napalm_plugin 
+COPY ./plugin_requirements.txt /opt/netbox/
+RUN /usr/local/bin/uv pip install -r /opt/netbox/plugin_requirements.txt

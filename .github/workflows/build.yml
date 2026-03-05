@@ -21,7 +21,7 @@ on:
       - '**.md'
 
 env:
-  GHCR_SLUG: ghcr.io/delta1977/unbound
+  GHCR_SLUG: ghcr.io/delta1977/netbox
 
 jobs:
   build:
